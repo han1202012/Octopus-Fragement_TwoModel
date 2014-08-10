@@ -1,0 +1,3 @@
+<resources>
+	<item type = "layout" name = "activity_main" >@layout/activity_main_land</item>
+</resources>

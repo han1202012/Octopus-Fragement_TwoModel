@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 
+    	Fragment中显示新闻标题
+    	设置样式 : stye 属性中设置一个 Android 系统自带的样式
+     -->
+    <TextView 
+        android:id="@+id/news_content_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/textAppearanceLarge"
+        android:gravity="center_horizontal"
+        android:padding="20dp"/>
+    
+    <!-- 显示新闻内容 -->
+    <TextView 
+        android:id="@+id/news_content_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="?android:attr/textAppearanceMedium"
+        android:padding="20dp"/>
+
+</LinearLayout>

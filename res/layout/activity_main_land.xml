@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" 
+    android:orientation="horizontal"
+    android:divider="?android:attr/dividerHorizontal"
+    android:showDividers="middle">
+    
+    <!--
+    	资源引用方式解析 :  
+    		@+id : 定义一个 id 值, 用于识别组件
+    		@id : 引用 id 值代表的组件
+    		@anroid:type : 引用 Android 内部的资源, type 指的是 drawable string 等资源类型
+    		?android:attr : 引用 Android 内部的样式
+    	
+    	分割线解析 : 
+    		分割线资源 : 在 android:divider 属性中引入样式, 这里通过 ?android:attr 引入一个 android 的自定义样式
+    		分割线样式 : android:showDivider 属性中设置, none 不显示分割线, beginning 在开始处显示, end 在结尾显示, middle 中间显示
+     -->
+
+    <fragment 
+        android:id="@+id/tittle_fragment"
+        android:name="cn.org.octopus.NewsTittleFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+    
+    <FrameLayout 
+        android:id="@+id/news_content"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.org.octopus"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!-- 
+	    	设置屏幕方向 android:screenOrientation : 
+	    		unspecified : 默认值, 系统自动判定方向
+	    		landscape : 横屏显示
+	    		portrait : 竖屏显示
+	    		user : 用户当前首选方向
+	    		behind : 与 之前的 Activity 方向一致;
+	    		sensor : 由物理传感器决定
+	    		nosenser : 忽略物理传感器感应
+	     -->
+        
+        <activity
+            android:name="cn.org.octopus.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="cn.org.octopus.NewsContentActivity"
+            android:label="@string/app_name"/>
+    </application>
+
+</manifest>
